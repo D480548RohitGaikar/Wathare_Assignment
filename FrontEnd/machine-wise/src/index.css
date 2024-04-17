@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 50.5%;
+  font-weight: 500;
+}
+
+body {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2rem;
+  height: 100vh;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+} */
+
+/* TemperatureInfo.css */
+.app {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 16px;
+}
+
+.input-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.weather-container {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.weather {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.weather li.day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.weather li.day:last-child {
+  border-bottom: none;
+}
+
+.weather li.day span {
+  font-size: 2em;
+}
+
+.weather li.day p {
+  margin: 0 5px;
+}
+
+.weather-card {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  width: 300px; /* Set a fixed width for the card */
+  margin: 0 auto; /* Center the card horizontally */
+}
+
+/* DataFilter.css */
+.filter-card {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.filter-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.filter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Spacing between filter groups */
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px; /* Spacing between label and input */
+}
+
+.filter-label {
+  color: #757575; /* Light gray for labels */
+  font-weight: lighter;
+}
+
+.filter-input {
+  flex-grow: 1; /* Allow input to fill remaining space */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-button {
+  background-color: #3b82f6; /* Blue button */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 8px;
+}
+
+.filter-button:hover {
+  background-color: #2c7be5; /* Darker blue on hover */
+}
+
+/* DataVisualization.css */
+.chart-container {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.chart-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header,
+.table-body {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.table-header {
+  font-weight: bold;
+}
